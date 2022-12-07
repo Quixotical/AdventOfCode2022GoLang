@@ -51,7 +51,7 @@ func main() {
 		}
 		rows[toContainer-1] = append(newToSlice, rows[toContainer-1]...)
 	}
-	for k, _ := range rows {
+	for k := range rows {
 		fmt.Printf("%s", rows[k][0])
 	}
 }
